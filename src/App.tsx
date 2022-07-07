@@ -1,9 +1,9 @@
-import Search from '@/components/Search';
+import Routes from './Routes';
 
 function App() {
   return (
     <div className='container'>
-      <Search />
+      <Routes />
     </div>
   );
 }
