@@ -1,0 +1,15 @@
+.repository-item {
+  width: 100%;
+  margin: 2rem 0;
+  cursor: pointer;
+  transition: opacity 0.25s ease-out;
+
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--outer-space);
+}
+
+.repository-item:hover {
+  opacity: 0.56;
+}

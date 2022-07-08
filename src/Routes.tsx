@@ -7,7 +7,7 @@ function ApplicationRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Search />} />
-        <Route path='/repositories' element={<Repositories />} />
+        <Route path='/repositories/:username' element={<Repositories />} />
         <Route path='*' element={<h1>Não encontrado</h1>} />
       </Routes>
     </BrowserRouter>

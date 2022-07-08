@@ -3,7 +3,9 @@ import Routes from './Routes';
 function App() {
   return (
     <div className='container'>
-      <Routes />
+      <div className='wrap'>
+        <Routes />
+      </div>
     </div>
   );
 }
