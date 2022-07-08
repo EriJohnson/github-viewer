@@ -1,6 +1,7 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Search from './components/Search';
 import Branches from './pages/Branches';
+import Commits from './pages/Commits';
 import Repositories from './pages/Repositories';
 
 function ApplicationRoutes() {
@@ -12,6 +13,10 @@ function ApplicationRoutes() {
         <Route
           path='/repositories/:owner/:repo/branches'
           element={<Branches />}
+        />
+        <Route
+          path='/repositories/:owner/:repo/branches/:branch'
+          element={<Commits />}
         />
         <Route path='*' element={<h1>Not Found</h1>} />
       </Routes>
