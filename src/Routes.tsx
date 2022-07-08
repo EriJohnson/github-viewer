@@ -1,5 +1,6 @@
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import Search from './components/Search';
+import Branches from './pages/Branches';
 import Repositories from './pages/Repositories';
 
 function ApplicationRoutes() {
@@ -7,8 +8,12 @@ function ApplicationRoutes() {
     <BrowserRouter>
       <Routes>
         <Route path='/' element={<Search />} />
-        <Route path='/repositories/:username' element={<Repositories />} />
-        <Route path='*' element={<h1>Não encontrado</h1>} />
+        <Route path='/repositories/:owner' element={<Repositories />} />
+        <Route
+          path='/repositories/:owner/:repo/branches'
+          element={<Branches />}
+        />
+        <Route path='*' element={<h1>Not Found</h1>} />
       </Routes>
     </BrowserRouter>
   );
